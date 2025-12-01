@@ -1,0 +1,62 @@
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(226, 226, 226);
+}
+
+header, nav, .card{
+    padding: 15px 20px;
+}
+header{
+
+    background-color: green;
+    color: white;
+    text-align: center;
+
+}
+
+nav{
+
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+}
+
+nav a{
+
+    text-decoration: none;
+    margin-right: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+.main-container{
+
+    flex: 3 1 250px;
+}
+
+.container{
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card{
+
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgb(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card img{
+
+    width: 700px;
+    height: 450px;
+    border: solid green 5px;
+    border-radius: 8px;
+    margin-left: 230px;
+
+}
+
