@@ -4,9 +4,17 @@ body{
     background-color: rgb(226, 226, 226);
 }
 
+.wrapper{
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header, nav, .card{
     padding: 15px 20px;
 }
+
 header{
 
     background-color: green;
@@ -29,12 +37,12 @@ nav a{
     font-weight: bold;
 }
 
-.main-container{
+.container{
 
     flex: 3 1 250px;
 }
 
-.container{
+.main-section{
 
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +58,7 @@ nav a{
     margin-bottom: 20px;
 }
 
-.card img{
+.image{
 
     width: 700px;
     height: 450px;
