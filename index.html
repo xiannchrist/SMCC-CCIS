@@ -9,6 +9,28 @@
 
 </head>
 
+    <script>
+
+         function toggleFAQ(){
+            var faqSection = document.getElementById("faq-content");
+            faqSection.classList.toggle("hidden-message");
+
+            var button = document.getElementById("faq-button");
+            if (faqSection.classList.contains("hidden-message")){
+                button.textContent = "Show FAQ";
+            }else{
+                button.textContent = "Hide FAQ";
+            }
+         }
+
+         document.addEventListener('DOMContentLoaded', (event) =>{
+            var style = document.createElement('style');
+            style.innerHTML = 'hidden-message{display: none;}';
+
+            document.head.appendChild(style);
+         })
+
+    </script>
 <body id="page-root">
 
     <div class="wrapper">
@@ -24,7 +46,7 @@
 
                 <a href="#Overview">Overview</a>
                 <a href="#Schedule">Schedule</a>
-                <a href="#Location"></a>
+                <a href="#Location">Location</a>
                 <a href="#FAQ">FAQ</a>
                 <a href="#Tech Demo">Tech Demo</a>
                 
@@ -43,8 +65,8 @@
                         <div class="info-box">
                             <p> <strong>SMCC-CCIS WEEK 2025</strong> is an annual campus event taht highlight student project, industry talks, and hands-on <br>workshops about software development, cybersecurity,artificial intelligence, and more</p>
 
-                            <p>Join us CCIS students! Get ready for CCIS DAYS 2025 happening on February 19-21, 2025 <br>
-                                with the theme: <em>“Encouraging the Community to Embrace Innovation, Unlock New Opportunities, and Explore Possibilities.” </em></p>
+                            <p>Join us CCIS students! Get ready for CCIS DAYS 2025 with the theme: <br>
+                                 <em> <blockquote>"Encouraging the Community to Embrace Innovation, Unlock New Opportunities, and Explore Possibilities."</blockquote></em></p>
 
                            
                    
@@ -92,14 +114,50 @@
                                 </ul>
                         </ul>
 
+                    </div>
 
+                </article>
+
+
+
+                <article class="card">
+                    
+                    <div id="location">
+
+                        <h2>Event Location & Map</h2>
+                        <p>All Events will be held at the <strong>SMCC Main Campus - IT Building</strong>.Use the embedded map below to find the location easily.</p>
+
+                         <div class="frame">
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.3069458588084!2d125.34046672362057!3d8.988223993703164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301ca2f04581cbb%3A0xe4e2656c7835d5f2!2sSaint%20Michael%20College%20of%20Caraga!5e0!3m2!1sen!2sph!4v1764685697581!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                         </div>  
+                        
 
                     </div>
 
+                </article>
 
 
+                <article id="faq-section" class="card">
+                        
+                        <h2>Frequently Asked Question (FAQ)</h2>
+                        <p>Use the buttons below to interact with the page</p>
+                        
+                        <button id="faq-button" onclick="toggleFAQ()">Show FAQ</button>
 
+                    <div id="faq-content" class="hidden-message"> 
 
+                            <h4>1. Is the event open to all students?</h4>
+                            <p>Yes,the event is open to all departments and year levels.</p>
+
+                            <h4>2. Do I need to register?</h4>
+                            <p>Registration is required for competition and workshops.</p>
+
+                            <h4>3. Is there a registration fee?</h4>
+                            <p>No, all SMCC-CCIS Week 2025 activities are free of charge.</p>
+                        
+                    </div>
                 </article>
                
 
