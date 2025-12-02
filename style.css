@@ -40,7 +40,7 @@ nav a{
 
 .container{
     
-    width: fit-content;
+    width: 98%;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -69,11 +69,11 @@ nav a{
 
 .card img{
 
-    width: 700px;
-    height: 450px;
+    width: 90%;
+    height: 500px;
     border: solid green 5px;
     border-radius: 8px;
-    margin-left: 65px;
+    margin-left: 45px;
     margin-bottom: 20px;
 }
 
@@ -106,5 +106,73 @@ nav a{
     background-color: darkgreen;
 }
 
+.code-block{
+
+    background-color: rgb(39, 39, 39);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre{
+
+    margin: 0;
+}
+
+code{
+
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+footer{
+
+    color: white;
+    background-color: green;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.side-bar{
+
+    background-color: white;
+    padding:  15px 20px;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.side-bar a{
+
+    text-decoration: none;
+    color: green    ;
+}
+
+@media (max-width: 600px){
+    
+    body{
+
+        font-size: 14px;
+    }
+
+    .container{
+
+        flex-direction: column;
+    }
+
+    .card{
+
+        font-size: 14px;
+    }
+
+    nav a{
+        display: inline-block;
+        margin-bottom: 6px;
+    }
+}
 
 

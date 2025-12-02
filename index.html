@@ -28,7 +28,7 @@
             style.innerHTML = 'hidden-message{display: none;}';
 
             document.head.appendChild(style);
-         })
+         });
 
     </script>
 <body id="page-root">
@@ -161,22 +161,118 @@
                 </article>
                
 
+                <article id="tech-demo" class="card">
 
+                    <div class="demo">
+
+                        <h2>Tech Demo & Developer Notes</h2>
+                        <h3>Sample Command (Using <code>&lt;pre&gt; and &lt;code&gt;</code>)</h3>
+
+                        <div class="code-block">
+                            <pre><code>// Clone the SMCC-CCIS Week repo
+git clone https://github.com/example/ccisweek2025.git
+
+// Install dependencies
+npm Install
+
+// Start development server
+npm run dev </code></pre>
+
+                        </div>
+                        
+                            <p>To save your changes, press Ctrl + s. Example system output using &lt;samp&gt;:Build successful. No errors found.</p>
+
+                    </div>
+
+                    <div class="register">
+
+                        <h2>Registration URL (URL Encoded)</h2>
+                        <p>Example registration URL with encoded spaces and symbols:</p>
+
+                        <div class="code-block">
+
+                            <pre><code>https://myschool.edu/events/register?event=IT%20Week%202025&amp;section=A</code></pre>
+
+                        </div>
+                        <p>Here, %20 represents a space character in the URL.</p>
+
+                    </div>
+
+                    <div class="html-xhtml">
+
+                        <h2>HTML vs XHTML Example</h2>
+                        <p>Compare the following snippets:</p>
+
+                        <div class="code-block">
+
+                            <pre><code>&lt;!--HTML-style (not strictly-closed) --&gt;
+&lt;br&gt;
+&lt;img src="image/logo.png" alt="Event logo"&gt;
+
+&lt;!--XHTML-style (self-closed, lowercase, quoted attributes) --&gt;
+&lt;br/&gt;
+&lt;img src="image/logo.png" alt="Event logo"/&gt;
+                            </code></pre>
+
+                        </div>
+
+                            <p>XHTML requires property closed tags,lowercase element names,and quoted attributes.</p>
+
+                    </div>
+
+
+                </article>
             
-
-
             </section>
 
+            <aside class="side-bar">
 
+                <h3>Event Info & Contacts</h3>
 
+                <p>SMCC-CCIS Week 2025 is organized by the College of <br>
+                of Computing & Information Sciences.</p>
 
+                <p>For Inquiries, email: <a href="#email">ccisweek@myschool.edu</a></p>
+
+                <p>Event Highlights:</p>
+
+                <ul>
+
+                    <li>Cybersecurity awareness</li>
+                    <li>Live coding sessions</li>
+                    <li>Industry speakers</li>
+                    <li>Project exhibits</li>
+
+                </ul>
+
+                <hr>
+
+                <h4>Character Encoding</h4>
+
+                <p>This page uses UTF-8 encoding, define as:</p>
+
+                <div class="code-block">
+
+                    <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+                </div>
+
+                <p>Special characters & entities: @2025 SMCC-CCIS Week All <br>rights reserved.</p>
+
+            </aside>
 
         </div>
 
 
+         <footer>
 
+             <p>SMCC-CCIS Week 2025 - Campus Event Showcase | Made with HTML,CSS & Javascript</p>
+
+        </footer>
 
     </div>
+
+
+   
     
 </body>
 </html>
