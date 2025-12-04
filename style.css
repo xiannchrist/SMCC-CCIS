@@ -72,6 +72,11 @@ nav a{
     
 }
 
+.info-box blockquote{
+
+    text-align: center;
+}
+
 .frame iframe{
     position: relative;
     width: 100%;
@@ -124,7 +129,7 @@ footer{
 }
 
 .side-bar{
-    
+
     background-color: white;
     padding: 15px 20px;
     border-radius: 8px;
