@@ -161,8 +161,14 @@ footer{
         padding-left: 15px;
         padding-right: 15px;
     }
+
     h1{
-        font-size:15px;
+
+        font-size:18px;
+    }
+    header p{
+
+        font-size:13px;
     }
 
     .container {
@@ -177,7 +183,7 @@ footer{
     nav a{
         display: inline-block;
         margin-right: 10px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .info-box blockquote{
