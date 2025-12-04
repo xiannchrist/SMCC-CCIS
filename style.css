@@ -1,96 +1,89 @@
-body{
 
+
+body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(226, 226, 226);
+    margin: 0;
+    padding: 0;
+   
 }
 
 .wrapper{
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+    width: 100%;
 }
 
-header, nav, .card{
+
+header, nav{
+    width: 100%;
     padding: 15px 20px;
+    box-sizing: border-box;
 }
 
 header{
-
     background-color: green;
     color: white;
     text-align: center;
-
 }
 
 nav{
-
     background-color: rgb(248, 248, 248);
-    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a{
-
     text-decoration: none;
-    margin-right: 15px;
     color: green;
     font-weight: bold;
 }
 
 .container{
-    
-    width: 98%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    padding-right: 100px;
-    gap: 10px;
-    
+    gap: 20px;
+    box-sizing: border-box;
 }
 
 .main-section{
 
-    flex: 3 1 250px;
+    flex: 3 1 300px;
 }
 
-#layout{
-
-    margin-top: 20px;
-}
 .card{
-
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 4px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px rgba(0,0,0,.1);
+    padding: 15px 20px;
     margin-bottom: 15px;
-    
 }
 
 .card img{
-
-    width: 90%;
-    height: 500px;
-    border: solid green 5px;
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    border: 5px solid green;
     border-radius: 8px;
-    
-    margin-bottom: 20px;
+    object-fit: cover;
 }
 
 .frame iframe{
-
     position: relative;
-    border-radius:8px;
     width: 100%;
+    height: 350px;
+    border-radius: 8px;
 }
 
 .hidden-message{
-
     display: none;
 }
 
 #faq-button{
-
     background-color: green;
     color: white;
     padding: 10px 20px;
@@ -101,12 +94,10 @@ nav a{
 }
 
 #faq-button:hover{
-
     background-color: darkgreen;
 }
 
 .code-block{
-
     background-color: rgb(39, 39, 39);
     color: white;
     padding: 20px;
@@ -117,18 +108,15 @@ nav a{
 }
 
 pre{
-
     margin: 0;
 }
 
 code{
-
     white-space: pre-wrap;
     word-wrap: break-word;
 }
 
 footer{
-
     color: white;
     background-color: green;
     text-align: center;
@@ -136,52 +124,79 @@ footer{
 }
 
 .side-bar{
-
     background-color: white;
-    padding:  15px 20px;
+    padding: 15px 20px;
     border-radius: 8px;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    flex: 1 1 250px;
+    margin-bottom:15px;
 }
 
-.side-bar a{
-
-    text-decoration: none;
-    color: green    ;
-}
 
 @media (max-width: 600px){
 
-    
-    body{
-
-        font-size: 14px;
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
     }
 
-    .container{
-
-        flex-direction: column;
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
-    .card{
-
-        font-size: 14px;
+    header, nav {
+        width: 100%;
+        padding-left: 0 ;
+        padding-right: 0;
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
     }
 
-    .card img{
+    header h1, header p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-    width: 90%;
-    height: 500px;
-    border: solid green 5px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
+    .container {
+        padding: 10px;
+        padding-left: 0 ;
+        padding-right: 0;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
 
     nav a{
         display: inline-block;
-        margin-bottom: 6px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .info-box blockquote{
+        text-align: center;
+    }
+
+    .card{
+        font-size: 14px;
+        margin-right: 10px;
+        margin-left:10px
+    }
+
+    .frame iframe{
+        height: 230px;
+    }
+
+    .card img{
+        max-height: 300px;
+    }
+    
+    .side-bar{
+
+        margin-left:10px;
+        margin-right:10px;
     }
 }
-
-
