@@ -151,13 +151,14 @@ footer{
         width: 100%;
         padding-left: 0 ;
         padding-right: 0;
-        font-size:25px;
         text-align: center;
         justify-content: center;
         box-sizing: border-box;
     }
 
     header h1, header p {
+
+        font-size:25px;
         padding-left: 15px;
         padding-right: 15px;
     }
