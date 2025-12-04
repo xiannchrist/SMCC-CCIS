@@ -132,7 +132,7 @@ footer{
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 500px){
 
     html, body {
         margin: 0;
