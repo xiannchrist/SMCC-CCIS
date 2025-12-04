@@ -1,89 +1,97 @@
-
-
 body{
+
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(226, 226, 226);
-    margin: 0;
-    padding: 0;
-   
+    margin:0;
 }
 
 .wrapper{
-    display: block;
+
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 100%;
+    
 }
 
-
-header, nav{
-    width: 100%;
+header, nav, .card{
     padding: 15px 20px;
-    box-sizing: border-box;
 }
 
 header{
+
     background-color: green;
     color: white;
     text-align: center;
+
 }
 
 nav{
+
     background-color: rgb(248, 248, 248);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    
 }
 
 nav a{
+
     text-decoration: none;
+    margin-right: 15px;
     color: green;
     font-weight: bold;
 }
 
 .container{
-    width: 100%;
+    
+    width: 98%;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    gap: 20px;
-    box-sizing: border-box;
+    padding-right: 100px;
+    gap: 10px;
+    
 }
 
 .main-section{
 
-    flex: 3 1 300px;
+    flex: 3 1 250px;
 }
 
+#layout{
+
+    margin-top: 20px;
+}
 .card{
+
+    
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 4px rgba(0,0,0,.1);
-    padding: 15px 20px;
+    box-shadow: 0 0 4px rgb(0, 0, 0, 0.1);
     margin-bottom: 15px;
-}
-
-.card img{
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-    border: 5px solid green;
-    border-radius: 8px;
     
 }
 
-.frame iframe{
-    position: relative;
-    width: 100%;
-    height: 350px;
+.card img{
+
+    width:100%;
+    height: 500px;
+    border: solid green 5px;
     border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.frame iframe{
+
+    position: relative;
+    border-radius:8px;
+    width: 100%;
 }
 
 .hidden-message{
+
     display: none;
 }
 
 #faq-button{
+
     background-color: green;
     color: white;
     padding: 10px 20px;
@@ -94,10 +102,12 @@ nav a{
 }
 
 #faq-button:hover{
+
     background-color: darkgreen;
 }
 
 .code-block{
+
     background-color: rgb(39, 39, 39);
     color: white;
     padding: 20px;
@@ -108,15 +118,18 @@ nav a{
 }
 
 pre{
+
     margin: 0;
 }
 
 code{
+
     white-space: pre-wrap;
     word-wrap: break-word;
 }
 
 footer{
+
     color: white;
     background-color: green;
     text-align: center;
@@ -124,187 +137,21 @@ footer{
 }
 
 .side-bar{
+
     background-color: white;
-    padding: 15px 20px;
+    padding:  15px 20px;
     border-radius: 8px;
-    flex: 1 1 250px;
-    margin-bottom:15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right:5px;
+    margin-bottom: 15px;
+}
+
+.side-bar a{
+
+    text-decoration: none;
+    color: green    ;
 }
 
 
 
-
-@media (max-width: 600px) {
-
-    html, body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        overflow-x: hidden;
-        font-size: 14px;
-    }
-
-    .wrapper {
-        display: block; 
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    header, nav {
-        padding: 10px 15px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    header h1, header p {
-        margin: 0;
-        padding: 0;
-        font-size: 18px; 
-    }
-    
-    header p{
-
-        font-size: 14px;
-    }
-
-  
-    nav {
-        display: block;
-        padding: 10px 0;
-    }
-
-    nav a {
-        display: inline-block;
-        margin-right: 10px;
-        font-size: 14px;
-        color: green;
-        font-weight: bold;
-    }
-
-   
-    .container {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .main-section {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-    }
-
-    
-    .side-bar {
-        width: 100%; 
-        margin: 10px 0;
-        padding: 15px;
-        box-sizing: border-box;
-        background-color: white;
-        border-radius: 8px;
-    }
-
-    
-    .card {
-        
-        margin: 15px 15px;
-        padding: 15px;
-        box-sizing: border-box;
-        font-size: 14px;
-        width: 100%; 
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 0 4px rgba(0,0,0,.1);
-    }
-
-  
-    .card img {
-        width: 100%;
-        height: auto;
-        max-height: 300px; 
-        border: 5px solid green;
-        border-radius: 8px;
-        object-fit: cover;
-    }
-
-    .frame iframe {
-        width: 100%;
-        height: 230px;
-        border-radius: 8px;
-        margin-top: 10px;
-    }
-
-    
-    #faq-button {
-        width: 100%;
-        padding: 10px 20px;
-        background-color: green;
-        color: white;
-        border-radius: 5px;
-        border: none;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    #faq-button:hover {
-        background-color: darkgreen;
-    }
-
- 
-    footer {
-        padding: 15px;
-        background-color: green;
-        color: white;
-        text-align: center;
-    }
-
-   
-    .hidden-message {
-        display: none;
-    }
-
-    .code-block {
-        font-family: 'Courier New', Courier, monospace;
-        background-color: rgb(39, 39, 39);
-        color: white;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        overflow-x: auto;
-    }
-}
-
-
-@media (max-width: 480px) {
-
-    header h1 {
-
-        font-size: 16px;
-    }
-
-    header p {
-        font-size: 12px;
-    }
-
-    .container {
-        
-        padding: 10px;
-    }
-
-    .card {
-
-        font-size: 12px;
-        width: 100%;
-        margin: 10px 15px;
-    }
-
-    .side-bar {
-        margin:10px 0;
-        width: 100%;
-        padding: 10px;
-    }
-
-    
-}
