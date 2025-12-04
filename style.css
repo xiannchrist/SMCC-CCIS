@@ -203,11 +203,15 @@ footer{
     }
 
     .main-section {
+
         width: 100%;
-        margin: 0;
-        padding: 10px;
+        margin: 0;   
     }
 
+    #layout{
+
+         margin:10px 0px;
+    }
     
     .side-bar {
         width: 100%; 
@@ -308,7 +312,7 @@ footer{
 
         font-size: 12px;
         width: 100%;
-        margin: 10px 15px;
+        margin: 10px 0px;
     }
 
     .side-bar {
