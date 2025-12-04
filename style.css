@@ -9,7 +9,7 @@ body{
 }
 
 .wrapper{
-    display: flex;
+    display: block;
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
@@ -66,10 +66,10 @@ nav a{
 .card img{
     width: 100%;
     height: auto;
-    max-height: 450px;
+    max-height: 500px;
     border: 5px solid green;
     border-radius: 8px;
-    object-fit: cover;
+    
 }
 
 .frame iframe{
@@ -133,89 +133,145 @@ footer{
 
 
 
+
 @media (max-width: 600px) {
+
     html, body {
         margin: 0;
         padding: 0;
         width: 100%;
         overflow-x: hidden;
+        font-size: 14px;
     }
 
     .wrapper {
+        display: block; 
         width: 100%;
         margin: 0;
         padding: 0;
     }
 
     header, nav {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-        justify-content: center;
+        padding: 10px 15px;
         box-sizing: border-box;
+        text-align: center;
     }
 
     header h1, header p {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    header p {
-        font-size: 13px;
-    }
-
-    .container {
-        padding: 10px;
-        width: 100%;
-        box-sizing: border-box;
         margin: 0;
+        padding: 0;
+        font-size: 18px; 
+    }
+    
+    header p{
+
+        font-size: 14px;
+    }
+
+  
+    nav {
+        display: block;
+        padding: 10px 0;
     }
 
     nav a {
         display: inline-block;
         margin-right: 10px;
-        font-size: 13px;
-    }
-
-    .card {
         font-size: 14px;
-        margin: 10px;
+        color: green;
+        font-weight: bold;
+    }
+
+   
+    .container {
         width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
     }
 
-    .frame iframe {
-        height: 230px;
+    .main-section {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
     }
 
-    .card img {
-        max-height: 300px;
-        width: 100%; 
-    }
-
+    
     .side-bar {
-        margin-left: 10px;
-        margin-right: 10px;
         width: 100%; 
-        padding: 15px 20px;
+        margin: 10px 0;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: white;
         border-radius: 8px;
     }
 
+    
+    .card {
+        margin: 10px 0;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        width: 100%; 
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 4px rgba(0,0,0,.1);
+    }
+
   
-    .main-section {
-        flex: 1 1 100%; 
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 300px; 
+        border: 5px solid green;
+        border-radius: 8px;
+        object-fit: cover;
     }
 
-    .wrapper {
-        flex-direction: column; 
+    .frame iframe {
+        width: 100%;
+        height: 230px;
+        border-radius: 8px;
+        margin-top: 10px;
     }
 
-    .side-bar, .main-section {
-        margin-bottom: 15px;
+    
+    #faq-button {
+        width: 100%;
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #faq-button:hover {
+        background-color: darkgreen;
+    }
+
+ 
+    footer {
+        padding: 15px;
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+
+   
+    .hidden-message {
+        display: none;
+    }
+
+    .code-block {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(39, 39, 39);
+        color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
     }
 }
 
@@ -229,12 +285,16 @@ footer{
         font-size: 12px;
     }
 
-    nav a {
-        font-size: 12px;
+    .container {
+        padding: 10px;
     }
 
     .card {
         font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .side-bar {
+        padding: 10px;
     }
 }
-
