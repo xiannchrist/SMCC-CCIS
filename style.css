@@ -137,6 +137,12 @@ footer{
     margin-bottom:15px;
 }
 
+.side-bar a{
+
+        color: green;
+        text-decoration: none;
+    }
+
 
 
 
@@ -211,7 +217,6 @@ footer{
         background-color: white;
         border-radius: 8px;
     }
-
     
     .card {
         
